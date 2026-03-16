@@ -191,7 +191,9 @@ namespace Examen_Bryan_Mejia
         }
 
         
-        private void button6_Click(object sender, EventArgs e)
+        
+
+        private void button6_Click_1(object sender, EventArgs e)
         {
             if (citas == null || citas.Count == 0)
             {
@@ -199,10 +201,10 @@ namespace Examen_Bryan_Mejia
                 return;
             }
 
-            
+
             citas = citas.OrderByDescending(c => c.Fecha).ToList();
 
-            
+
             dataGridView3.DataSource = null;
             dataGridView3.DataSource = citas;
         }
